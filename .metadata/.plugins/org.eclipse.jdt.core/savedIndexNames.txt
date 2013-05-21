@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+D:\Helal's\Pharos-Work-From-Home\.metadata\.plugins\org.eclipse.jdt.core
+3679557365.index
+771537809.index
+1292284335.index

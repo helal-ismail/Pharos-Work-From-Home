@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;wnc.logging.Home&apos;" deleteContents="false" description="Delete resource &apos;wnc.logging.Home&apos;" element1="/wnc.logging.Home" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1369153146747"/>&#x0A;<refactoring comment="Rename resource &apos;wnc.logging.Home&apos; to &apos;BAT CheckIn&apos;" description="Rename resource &apos;wnc.logging.Home&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/wnc.logging.Home" name="BAT CheckIn" stamp="1369153177970" updateReferences="true"/>
+</session>

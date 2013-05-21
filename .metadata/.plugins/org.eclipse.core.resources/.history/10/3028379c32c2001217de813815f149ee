@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Home" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/intro4" />
+
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/intro4" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+       android:layout_below="@+id/logo"
+        android:layout_marginTop="150px"
+        android:text="@string/bracelet_question"
+        android:textColor="@android:color/black"
+        android:textSize="65sp" />
+
+    <Button
+        android:id="@+id/yes"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/text"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="200px"
+        android:layout_marginTop="80px"
+        android:background="@drawable/rect_button"
+        android:text="@string/yes"
+        android:enabled="true"
+        android:textColor="@android:color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/no"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignRight="@+id/text"
+        android:layout_below="@+id/text"
+        android:layout_marginRight="200px"
+        android:layout_marginTop="80px"
+        android:background="@drawable/rect_button"
+        android:text="@string/no"
+        android:textColor="@android:color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

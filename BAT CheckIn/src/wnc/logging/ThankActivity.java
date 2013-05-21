@@ -1,0 +1,42 @@
+package wnc.logging;
+
+import wnc.logging.modules.AppHelper;
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.widget.TextView;
+
+public class ThankActivity extends Activity {
+	AppHelper appHelper = AppHelper.getInstance();
+	Handler handler;
+	Context mContext = this;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		// getWindow().getDecorView().setSystemUiVisibility(
+		// View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
+		setContentView(R.layout.thank);
+		TextView textView = (TextView) findViewById(R.id.user);
+		textView.setText("User!");
+		handler = new Handler();
+		handler.postDelayed(callback, appHelper.timeBeforeReturn);
+	}
+
+	Runnable callback = new Runnable() {
+
+		@Override
+		public void run() {
+			finish();
+			overridePendingTransition(R.anim.push_left, R.anim.push_right);
+		}
+	};
+
+	@Override
+	public void onBackPressed() {
+
+	};
+
+}
